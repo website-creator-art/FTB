@@ -16,7 +16,13 @@ nav ul a{
 
 nav ul a:hover {
   color: white;
-  background-color: #4db6ac;
+  background-color: #80cbc4;
+}
+
+#cici {
+    position: fixed;
+    top: 0;
+    transition: top 0.5s;
 }
 
 nav a .brand-logo {
@@ -200,7 +206,7 @@ nav .button-collapse {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 20px;
-  /*-webkit-text-stroke:0.1px #4db6ac;*/
+  -webkit-text-stroke:0.1px #4db6ac;
 }
 
 .header-subtitle {
@@ -451,7 +457,7 @@ font-weight: bold;
   }
 
 .header-title {
-  margin-top: 90px;
+  margin-top: 250px;
 }
 
 }
@@ -466,7 +472,7 @@ font-weight: bold;
     margin: 20px 130px 10px 130px;
   }
   .header-title {
-  margin-top: 90px;
+  margin-top: 120px;
 }
 #card1 {
   padding: 10px 100px ;
@@ -478,7 +484,7 @@ font-weight: bold;
     margin: 20px 70px 10px 70px;
   }
   .header-title {
-  margin-top: 50px;
+  margin-top: 120px;
 }
 #program_info {
   padding: 0px 20px 20px;
@@ -541,7 +547,8 @@ button.test-button {
     height: 30px;
   }
   .header-title {
-  margin-top: 30px;
+  margin-top: 150px;
+  font-size: 60px;
 }
 
 #academy_paragraph {
