@@ -31,11 +31,11 @@ button.test-button{
   padding:0.3em 1.2em;
   margin:40px 0.3em 0.3em 0;
   border-radius:2em;
-  border-color: #4db6ac;
+  border-color: white;
   box-sizing: border-box;
   text-decoration:none;
   color: white;
-  background-color:transparent;
+  background-color:#4db6ac;
   text-align:center;
   transition: all 0.8s;
   cursor: pointer;
@@ -43,9 +43,9 @@ button.test-button{
 }
 
 button.test-button:hover{
-  background-color:#4db6ac;
+  background-color: #80cbc4;
   color: white;
-  border-color: #4db6ac;
+  border-color: white;
 }
 
 input#nameField.btn2{
@@ -90,11 +90,11 @@ button#send.btn3{
   display:inline-block;
   margin-bottom: 20px;
   border-radius:2em;
-  border-color: #4db6ac;
+  border-color: white;
   box-sizing: border-box;
   text-decoration:none;
   color: white;
-  background-color:transparent;
+  background-color:#4db6ac;
   text-align:center;
   transition: all 0.8s;
   cursor: pointer;
@@ -112,9 +112,9 @@ button#send.btn3{
   cursor: pointer;*/
 }
 button#send.btn3:hover {
-background-color:#4db6ac;
+background-color:#80cbc4;
   color: white;
-  border-color: #4db6ac;
+  border-color: white;
 }
 
 button#button {
