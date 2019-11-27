@@ -48,7 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Fixed Nav Bar mobile responsive -->
 
-<div class="navbar-fixed">
+<div id="cici" class="navbar-fixed">
 <nav>
     <div class="nav-wrapper">
 
@@ -88,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button id="button" class="test-button" onclick="showFormContainer()">JUMP IN THE FOODTECH INDUSTRY</button>
 
 
-  <div id="formContainer" style="display: none" class="container">
+  <div id="formContainer" style="display: none; margin-top: 60px;" class="container">
           <form id="form" class="row" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
             <div class="col s12 m6 l6">
         <input id="nameField" class="btn2" type="text" name="entry.2096528774" placeholder="Enter your name" required>
@@ -479,6 +479,20 @@ $('#submit-form').on('click', function(e) {
 
 
 <script>
+
+  //Scrolldown
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos+0.20) {
+    document.getElementById("cici").style.top = "0";
+  } else {
+    document.getElementById("cici").style.top = "-100px";
+    document.getElementById("mobile-demo").style.padding = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 
     //Open form container
     function showFormContainer(){
