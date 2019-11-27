@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en-it">
+<head>
+  <!-- Metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Food Tech Bootcamp</title>
+    <meta name="description" content="The first coding bootcamp based in India designed for the 'next generation' of FoodTech enterpreneurs."/>
+
+  <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- Browser Tab Icon -->
+    <link rel="shortcut icon" href="image/logo2.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Share+Tech&display=swap" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-ND3V3HW');</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151264760-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151264760-1');
+    </script>
+
+  <!-- Jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND3V3HW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Fixed Nav Bar mobile responsive -->
+
+<div class="navbar-fixed">
+<nav>
+    <div class="nav-wrapper">
+
+      <a href=""><img src="image/logo2.png" class="brand-logo" ></a>
+     <!--   <a href="" class="brand-logo">FoodTech Bootcamp
+      </a> -->
+
+
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="menu right hide-on-small-only">
+          <li><a href="#bootcamp-program">BOOTCAMP</a></li>
+           <li><a href="#academy_section">ACADEMY</a></li>
+          <li><a href="#food_section">FOODTECH TRIPS</a></li>
+          <li><a href="#career">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+  <ul class="sidenav" id="mobile-demo">
+     <li><a style="color:#4db6ac" href="#bootcamp-program">BOOTCAMP</a></li>
+     <li><a class="sidenav-text" href="#academy_section">ACADEMY</a></li>
+      <li><a class="sidenav-text" href="#food_section">FOODTECH TRIPS</a></li>
+      <li><a class="sidenav-text" href="#career">BLOG</a></li>
+      <li><a class="sidenav-text" href="#contact">CONTACT</a></li>
+  </ul>
+
+<!-- Intro -->
+
+ <div id="intro" class="parallax-container valign-wrapper">
+    <div id="image_intro" class="parallax"><img src="image/landscape_low.jpg" alt=""></div>
+    <div class="section-intro no-pad-bot">
+      <div class="container">
+        <h1 id="title-test" class="header-title white-text light">LEARN<br>CODING</h1>
+        <!-- <h2 class="header-subtitle waves-light" light> Jump in the FoodTech industry</h2> -->
+        <button id="button" class="test-button" onclick="showFormContainer()">JUMP IN THE FOODTECH INDUSTRY</button>
+
+
+  <div id="formContainer" style="display: none" class="container">
+          <form id="form" class="row" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+            <div class="col s8 offset-s2 m6 l6">
+        <input id="nameField" class="btn2" type="text" name="entry.2096528774" placeholder="Enter your name" required>
+      </div>
+      <div class="col s8 offset-s2 m6 l6">
+        <input id="emailField" class="btn2" type="email" name="entry.543364557" placeholder="Enter your email" required>
+      </div>
+      <div class="col s6 offset-s3 m6 offset-m3 l6 offset-l3">
+        <button id="send" class="btn3 col s12 m12" type="submit">APPLY</button>
+      </div>
+
+    </form>
+
+
+    <h5 id="success-msg" style="text-align: center; display: none">Thanks <span id="namehere"></span>!<br>We will get in touch soon.</h5>
+  </div>
+
+
+      </div>
+    </div>
+
+      </div>
+
+
+      <!--   PROGRAM  -->
+
+ <div id="bootcamp-program" class="parallax-container section">
+    <div class="section-intro no-pad-bot">
+      <div class="container">
+        <div class="row">
+          <h3 class="center icon-block white-text"><i class="material-icons colored">developer_mode</i></h3>
+          <h2 class="title-section colored">BUILD YOUR FOODTECH STARTUP</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="program-container" class="container">
+   <div class="section-intro">
+      <div class="row">
+
+<div class="col s12 m4 l4">
+          <div class="icon-block2">
+            <h4 class="icon-one colored">12</h4>
+            <h4 class="center colored light program-title">WEEKS<br>CODING ACADEMY</h4>
+            <h5 id="program_info" class="center colored2">Join our coding academy partner based in India and start learn Python, an easy and powerful programming language widely used by tech company</h5>
+          </div>
+        </div>
+
+
+        <div class="col s12 m4 l4">
+          <div class="icon-block2">
+            <h2 class="icon-one colored">3</h2>
+            <h4 class="center colored light program-title">STUDY<br>TRIPS</h4>
+            <h5 id="program_info" class="center colored2">Travel across India, discover amazing startups and meet leading enterpreneurs behind the scene of FoodTech industry</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+          <div class="icon-block2">
+            <h2 class="icon-one colored">1</h2>
+            <h4 class="center colored light program-title">FOOD TECH<br>PROJECT</h4>
+            <h5 id="program_info" class="center colored2">Assisted by professional developers turn your FoodTech idea into reality and pitch your MVP to investors and Startup accelerators</h5>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- PARALLAX IMAGE -->
+   <div id="academy_section" class="parallax-container valign-wrapper bend_opportunity section">
+    <div class="section-image">
+      <div class="container">
+        <div class="row">
+          <h3 class="center icon-block"><i class="fa fa-university"></i></h3>
+          <h2 class="center title-section white-text">YOUR FOODTECH JOURNEY STARTS HERE</h2>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- INIZIO PROVA ACADEMY SECTION -->
+<div class="container academy-section center">
+  <div id="academy-logo">
+    <a href="https://india.byteacademy.co/" class="byte-icon" target="_blank"><img style="width:105px" src="image/byte_logo.png"></a>
+    <img style="width:190px" src="image/india_flag.png">
+  </div>
+    <div class="academy-info colored">
+    <h5>Headquartered in New York City with an international campus in Bangalore, Byte Academy is a leader in industry-oriented technology education with courses in Python software development, FinTech (financial technology), Data Science and Blockchain</h5>
+  </div>
+  </div>
+
+<!-- Academy slider-->
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="image/bangalore.jpg" alt="">
+      <div class="caption center-align colored">
+        <h3>This is our tagline</h3>
+        <h5 class="light colored">Here is our slogan</h5>
+      </div>
+    </li>
+    <li>
+      <img src="image/byte_class.jpg" alt="">
+      <div class="caption center-align">
+        <h3>This is our tagline</h3>
+        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+      </div>
+    </li>
+    <li>
+      <img src="image/byte_office2.jpg" alt="">
+      <div class="caption center-align">
+        <h3>This is our tagline</h3>
+        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+      </div>
+    </li>
+    <li>
+      <img src="image/byte_cafè.jpg" alt="">
+      <div class="caption center-align">
+        <h3>This is our tagline</h3>
+        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+      </div>
+    </li>
+    <li>
+      <img src="image/bangalore_city.jpg" alt="">
+      <div class="caption center-align">
+        <h3>This is our tagline</h3>
+        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- PARALLAX IMAGE -->
+<div id="academy_section" class="parallax-container valign-wrapper bend_opportunity section">
+    <div class="section-image">
+      <div class="container">
+        <div class="row">
+          <h3 class="center icon-block"><i class="fa fa-university"></i></h3>
+          <h2 class="center title-section white-text">BYTE ACADEMY</h2>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--   ACADEMY CARD -->
+<div id="academy">
+
+  <div class="row">
+  <h5 id="academy_paragraph" class="header-section colored center"></h5>
+
+    <div id="card1" class="col s12">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator center" src="image/bangalore.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator colored2">Byte Academy - Indiranagar, Bangalore<i class="material-icons right">more_vert</i></span>
+              <p><a class="colored" href="https://india.byteacademy.co/" target="_blank">Visit website</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title colored">Byte Academy<i class="material-icons right">close</i></span>
+
+              <h6 class="colored2">Headquartered in New York City with an international campus in Bangalore, Byte Academy is a leader in industry-oriented technology education with courses in Python software development, FinTech (financial technology), Data Science and Blockchain.</h6> <br>
+
+              <h6 class="colored">FOODTECH PROJECT AREA</h6>
+
+              <ul id="cr_byteacademy">
+                <li>Cooking robots</li>
+                <li>Urban farming</li>
+                <li>Blockchain traceability</li>
+                <li>Food & wine marketplace (advanced e-commerce)</li>
+                <li>Internet of things</li>
+            </ul>
+
+              <h6 class="colored">LOCATION</h6>
+
+              <ul id="cr_byteacademy">
+                <li>Indiranagar, a modern area of Bangalore city</li>
+                <li>In-class lesson in a modern co-working building</li>
+                <li>Private study room available</li>
+                <li>High speed wifi</li>
+            </ul>
+
+              <h6 class="colored">LIFE</h6>
+
+              <ul id="cr_byteacademy">
+                <li>Single apartment rent available from 200€/month</li>
+                <li>Daily tech events and meetup</li>
+                <li>Great restaurants and sparkling nightlife</li>
+            </ul>
+
+            <p> *During this program accomodation and food are not included</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!--   FOOD TECH TRIPS -->
+<div id="food_section" class="parallax-container section">
+    <div class="section-intro no-pad-bot">
+      <div class="container">
+        <div class="row">
+          <h3 class="center icon-block colored"><i class="fa fa-plane"></i></h3>
+          <h2 class="title-section colored">DISCOVER THE FUTURE OF FOODTECH</h2>
+          <h5 class="header-section white-text">#FOODTECH #TRAVEL #MEET #ENTREPRENEURSHIP #TASTE #AMAZINGINDIA</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="food_icon" class="parallax-container">
+    <div class="section-intro">
+      <div class="row">
+
+        <div class="col m12 l12">
+          <div class="icon-block">
+            <h3 class="center program-title light colored">RURAL</h3>
+             <h5 class="center program-title light colored">5 DAYS</h5>
+            <img class="responsive-img circle" src="image/rural.jpg">
+            <h5 class="center h5-subtitle light white-text">
+            Visit rural areas of India, learn traditional organic agriculture practice and test AG-Tech solutions in the field</h5>
+          </div>
+        </div>
+
+        <div class="col m12 l12">
+          <div class="icon-block">
+            <h3 class="center light program-title colored">TECH</h3>
+            <h5 class="center light program-title colored">3 DAYS</h5>
+            <img class="responsive-img circle" src="image/tech.jpg">
+            <h5 class="center h5-subtitle light white-text">Enjoy the vibrant atmosphere of FoodTech Startups, meet leading people and professional developers that are changing the future of food industry</h5>
+          </div>
+        </div>
+
+        <div class="col m12 l12">
+          <div class="icon-block">
+            <h3 class="center light program-title colored">PARADISE</h3>
+            <h5 class="center light program-title colored">7 DAYS</h5>
+            <img class="responsive-img circle" src="image/paradise.jpg">
+            <h5 class="center h5-subtitle light white-text">Leave behind the city and finalize your project in a hidden paradise while exploring fisherman's villages and taste delicious seafood recipes</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- CAREER -->
+<div class="career">
+
+<div id="career" class="parallax-container valign-wrapper">
+    <div id="section_opportunity" class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="center icon-block colored"><i class="fa fa-flag"></i></h3>
+          <h2 id="title_opportunity" class="center header-title col s12 light colored">JOIN US</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <!--   Opportunity section   -->
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+
+<!-- Icon1 -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 id="icon-opportunity" class="center colored"><i class="fa fa-university"></i></h2>
+            <h5 class="colored">Academic research</h5>
+            <p class="center light"></p>
+          </div>
+        </div>
+
+<!-- Icon2 -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 id="icon-opportunity" class="center colored"><i class="fa fa-graduation-cap"></i></h2>
+            <h5 class="colored">Thesis | Internship</h5>
+            <p class="center light"></p>
+          </div>
+        </div>
+
+<!-- Icon3 -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 id="icon-opportunity" class="center colored"><i class="fa fa-rocket"></i></h2>
+            <h5 class="colored">Work with us</h5>
+            <p class="center light"></p>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- FOOTER -->
+  <footer id="contact" class="page-footer">
+    <div class="container">
+    <div class="row">
+
+        <div class="col s12 m4 l4">
+          <h5 class="colored">Contact</h5>
+          <h6 class="">365 Shared Spaces, Indiranagar 1st Stage, Bengaluru, Karnataka 560038</h6>
+          <h6 class="">hello@foodtechbootcamp.com</h6>
+          <h6 class="">+39 3393286640</h6>
+
+        </div>
+
+        <div class="col s4 m4 l4">
+        </div>
+
+        <div class="col s4 m4 l4">
+          <!-- <h5 class="colored">Media</h5>
+          <a href="https://www.linkedin.com/company/foodtechbootcamp/" class="social-icon"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/foodtechbootcamp/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <!-- <div class="container white-text center">
+        2019 &copy <a class="white-text text-lighten-3" href="http://foodtechbootcamp.com" target="">FoodTechBootcamp</a>
+      </div> -->
+    </div>
+  </footer>
+
+
+  <!-- JQUERY -->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+   $(document).ready(function(){
+    // Init carousel
+    $('.carousel').carousel();
+
+    // Init carousel-slider
+    $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+    $('.slider').slider();
+ })
+   </script>
+
+<!-- AJAX FORM SCRIPT -->
+<!-- <script>
+  $.fn.serializeObject = function() {
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function() {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+    } else {
+      o[this.name] = this.value || '';
+    }
+  });
+  return o;
+};
+
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwrPdkBOuiWOjk_MEgC3IOZePXvtNljNHI60tYPrtZmHxTk7CMM/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(function(e){console.log(e);}
+  );
+})
+</script> -->
+
+
+<script>
+
+    //Open form container
+    function showFormContainer(){
+    document.getElementById("formContainer").style.display = "block";
+    document.getElementById("button").style.display = "none";
+  }
+
+    //Post html form to google form and googlesheet
+    function postToGoogle() {
+                var field1 = $("#nameField").val();
+                var field2 = $("#emailField").val();
+
+                if(field1 == ""){
+                    alert('Please Fill Your Name');
+                    document.getElementById("nameField").focus();
+                    return false;
+                }
+                if(field2 == ""){
+                    alert('Please Fill Your Email');
+                    document.getElementById("emailField").focus();
+                    return false;
+                }
+
+
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLScgb8rJkNVtuJ8V84_GfZBK7YU56OO680ChravbwHBRCP1RkA/formResponse?",
+                    data: {"entry.2096528774": field1, "entry.543364557": field2},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+                    {
+                    },
+                    error: function(x, y, z)
+                        {
+
+                            $('#success-msg').show();
+                            $('#form').hide();
+
+                        }
+                });
+                return false;
+            }
+
+
+//Form name show to the success message
+var userName = document.getElementById('nameField')
+var showName = document.getElementById('namehere')
+var submit = document.getElementById('send')
+
+window.onload = function() {
+  submit.onclick = function() {
+    showName.innerHTML = userName.value
+  }
+}
+</script>
+
+
+  <!--  Javascript-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/dom.js"></script>
+
+
+
+    <!-- FontAwesome -->
+<script src="https://use.fontawesome.com/3262d1f7d4.js"></script>
+
+
+  </body>
+</html>

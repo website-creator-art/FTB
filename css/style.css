@@ -1,0 +1,616 @@
+/*/*/*/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  font-family: 'Share Tech', sans-serif;
+}
+
+nav ul a{
+  color: #4db6ac;
+}
+
+nav ul a:hover {
+  color: white;
+  background-color: #4db6ac;
+}
+
+nav a .brand-logo {
+  font-family: 'Mansalva', cursive;
+  color: #4db6ac;
+  width: 100px;
+  height: 100px;
+}
+
+button.test-button{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:40px 0.3em 0.3em 0;
+  border-radius:2em;
+  border-color: #4db6ac;
+  box-sizing: border-box;
+  text-decoration:none;
+  color: white;
+  background-color:transparent;
+  text-align:center;
+  transition: all 0.8s;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+button.test-button:hover{
+  background-color:#4db6ac;
+  color: white;
+  border-color: #4db6ac;
+}
+
+input#nameField.btn2{
+  text-transform: uppercase;
+  font-family: 'Share Tech', sans-serif;
+  border: 1px solid #4db6ac;
+  display:inline-block;
+  height: 30px;
+  padding:0.3em 1.2em;
+  margin:0px 0.3em 0.3em 0px;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  color: #4db6ac ;
+  background-color:white;
+  text-align:center;
+  transition: all 0.8s;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input#emailField.btn2{
+  text-transform: uppercase;
+  font-family: 'Share Tech', sans-serif;
+  border: 1px solid #4db6ac;
+  display:inline-block;
+  height: 30px;
+  padding:0.3em 1.2em;
+  margin:0px 0.3em 0.3em 0px;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  color: #4db6ac ;
+  background-color:white;
+  text-align:center;
+  transition: all 0.8s;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button#send.btn3{
+  display:inline-block;
+  margin-bottom: 20px;
+  border-radius:2em;
+  border-color: #4db6ac;
+  box-sizing: border-box;
+  text-decoration:none;
+  color: white;
+  background-color:transparent;
+  text-align:center;
+  transition: all 0.8s;
+  cursor: pointer;
+  font-size: 20px;
+  height: 30px;
+  /*background-color: #4db6ac;
+  padding-left: 0px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  font-family: 'Share Tech', sans-serif;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;*/
+}
+button#send.btn3:hover {
+background-color:#4db6ac;
+  color: white;
+  border-color: #4db6ac;
+}
+
+button#button {
+  margin-bottom: 50px;
+}
+
+.nav-wrapper {
+  padding: 0 20px;
+  background-color: white;
+}
+
+#mobile-demo {
+  width: 120px;
+
+}
+
+.sidenav li > a {
+  color: #4db6ac;
+  padding: 0px 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  nav a.sidenav-trigger {
+    display: none;
+  }
+}
+
+nav .button-collapse {
+  color: #4db6ac;
+  padding: 0 0px;
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 56px;
+  margin: 0 0px;
+}
+
+
+
+.parallax-container {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.title-section{
+    font-weight: bold;
+    margin: 0px;
+}
+
+/*INTRO*/
+
+/*input {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+.btn{
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}*/
+
+.section-intro {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.colored {
+  color:#4db6ac;
+}
+
+.colored2 {
+  color: #023436;
+}
+
+.header-title {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  /*-webkit-text-stroke:0.1px #4db6ac;*/
+}
+
+.header-subtitle {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.header-subtitle2 {
+}
+
+.header-section {
+  font-weight: bold;
+}
+
+
+#email {
+  height: 2rem;
+  margin-bottom: 0px;
+}
+
+.btn-registration {
+width: 100%;
+height: 3rem;
+font-weight: bold;
+background-color: #4db6ac;
+}
+
+i.btn-small.waves-effect.waves-light.waves-input-wrapper {
+  padding: 0px;
+  background-color:white;
+  color: #4db6ac;
+  border-color: #4db6ac;
+  }
+
+  input[type=text]:not(.browser-default) {
+    height: 3rem;
+    padding-left: 20px;
+    border-bottom: none;
+
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: none;
+  }
+
+#email-input {
+  font-weight: bold;
+  color: #4db6ac ;
+  font-family: 'Share Tech', sans-serif;
+}
+
+#submit-form {
+font-weight: bold;
+  font-family: 'Share Tech', sans-serif;
+}
+
+/*PROGRAM*/
+
+
+div#program-container.container {
+  width: 100%;
+  height: 100%;
+}
+
+.program-title {
+  margin-top: 0px;
+}
+
+.icon-block2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.icon-one {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4em;
+}
+
+
+#program_info {
+  padding: 0px 50px 10px;
+  font-size: 1.5em;
+}
+
+/*#bootcamp-program {
+  min-height: 100px;
+  margin-top: 30px;
+}*/
+
+#program-container {
+  margin-bottom: 120px;
+}
+.h5-subtitle {
+margin: 20px 250px 10px 250px;
+padding-bottom: 50px;
+color: #023436 }
+
+#white-back {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+
+/*ACADEMY*/
+
+#academy-logo {
+  opacity: 50%;
+}
+
+.academy-info h5 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#academy_h1 {
+  text-align: center;
+  padding: 0px 50px 0px 50px;
+}
+
+.bend_opportunity {
+  background-color:#4db6ac;
+  width:100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+#academy_section {
+  min-height: 100px;
+}
+
+#academy {
+  margin-bottom: 100px;
+}
+
+#academy_paragraph {
+  line-height: 1;
+  padding: 0px 150px;
+}
+
+#cr_byteacademy li {
+  margin-left: 20px;
+  list-style: square;
+  color: #023436;
+  }
+  p {
+  color: #4db6ac;
+}
+
+#card1 {
+  padding: 10px 150px ;
+}
+
+
+
+
+/*PARALLAX IMAGE*/
+.title_parallax {}
+
+.section-image{
+    width: 100%;
+    }
+
+
+/*FOOD STUDY TRIP*/
+
+
+
+#program_image {
+  min-height: 300px;
+}
+
+#food_section {
+  width: 100%;
+  height:100%;
+  background-color: #023436;
+}
+
+
+#food_icon {
+  background-color: #023436;
+}
+.icon-block {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.circle {
+  width: 400px;
+  max-height: 300px;
+}
+
+div#food_icon.parallax-container {
+    padding: 0px 100px 70px 100px;
+}
+
+/*CAREER*/
+
+.career {
+  padding-bottom: 100px;
+}
+
+#opportunity_section {
+  min-height: 300px;
+  margin-top: 100px;
+}
+
+#section_opportunity {
+  width: 100%;
+  height: 100%;
+}
+
+#icon-opportunity {
+font-size: 100px;
+}
+
+#title_opportunity {
+  margin-top: 10px;
+font-weight: bold;
+}
+
+/*CONTACT US*/
+
+.parallax-container .header-contact_us{
+  line-height: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#contact_us_section {
+  min-height: 300px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width : 6000px) {
+  .parallax-container .section {
+  /*  position: absolute;
+    top: 40%;*/
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+.header-title {
+  margin-top: 90px;
+}
+
+}
+
+@media only screen and (max-width : 992px) {
+  nav a .brand-logo {
+  width: 100px;
+  height: 100px;
+  left: 10%;
+}
+  .h5-subtitle {
+    margin: 20px 130px 10px 130px;
+  }
+  .header-title {
+  margin-top: 90px;
+}
+#card1 {
+  padding: 10px 100px ;
+}
+}
+
+@media only screen and (max-width : 760px) {
+  .h5-subtitle {
+    margin: 20px 70px 10px 70px;
+  }
+  .header-title {
+  margin-top: 50px;
+}
+#program_info {
+  padding: 0px 20px 20px;
+}
+
+#academy_paragraph {
+  line-height: 1;
+  padding: 0px 100px;
+}
+#card1 {
+  padding: 10px 50px ;
+}
+}
+
+@media only screen and (max-width: 677px) {
+  button.test-button {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  nav a .brand-logo {
+  width: 55px;
+  height: 55px;
+  left: 50%;
+}
+button.test-button {
+    font-size: 20px;
+  }
+  #months {
+  margin-top: 0px;
+}
+ .h5-subtitle {
+    margin: 20px 50px 10px 50px;
+  }
+  .info_program {
+    margin: 0px 70px;
+    padding: 0px 0px 40px 0px;
+  }
+  div#food_icon.parallax-container {
+    padding: 0px 30px 70px 30px;
+}
+
+#academy_paragraph {
+  line-height: 1;
+  padding: 0px 70px;
+}
+#card1 {
+  padding: 10px 50px ;
+}
+}
+
+
+@media only screen and (max-width : 450px) {
+  .info_program {
+    margin: 0px 10px;
+  }
+  button.test-button {
+    font-size: 17px;
+    height: 30px;
+  }
+  .header-title {
+  margin-top: 30px;
+}
+
+#academy_paragraph {
+  line-height: 1;
+  padding: 0px 50px;
+}
+#card1 {
+  padding: 10px 30px ;
+}
+.h5-subtitle {
+    margin: 10px 5px 20px 5px;
+}
+}
+
+@media only screen and (max-width : 400px) {
+  button.test-button {
+    font-size: 14px;
+  }
+  #academy_paragraph {
+  line-height: 1;
+  padding: 0px 30px;
+}
+#card1 {
+  padding: 10px 20px ;
+}
+.h5-subtitle {
+    margin: 10px 5px 20px 5px;
+}
+}
+
+#intro h5 {
+font-size: 1.3em;
+line-height: 1.6em;
+}
+
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color: #0c0f0a;
+}
+
+.social-icon {
+  font-size: 3em;
+  color:white;
+  padding: 0px 20px 0px 0px;
+}
+
+.social-icon:hover {
+  color: #4db6ac;
+}
+
+
+
+/*PROVE ACADEMY */
+
+.slider {
+  margin-bottom: 100px;
+}
+
+
+
+.slider .indicators .indicator-item.active {
+  background-color: #4db6ac;
+}
+
+
+
+*/*/*/
