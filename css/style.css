@@ -162,7 +162,8 @@ button#button {
 }
 
 .brand-logo-nav {
-  width: 50px;
+  width: 55px;
+  padding-top: 10px;
 }
 
 .sidenav li > a {
