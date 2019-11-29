@@ -171,6 +171,10 @@ button#button {
   padding: 0px 10px;
 }
 
+nav i.material-icons {
+  font-size: 33px;
+}
+
 @media only screen and (min-width: 600px) {
   nav a.sidenav-trigger {
     display: none;
@@ -604,7 +608,7 @@ button.test-button {
   }
   button#button.test-button{
     font-size: 12px;
-    height: 30px;
+    height: 35px;
   }
   .header-title {
   margin-top: 150px;
