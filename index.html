@@ -55,6 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href=""><img src="image/logo2.png" class="brand-logo" ></a>
      <!--   <a href="" class="brand-logo">FoodTech Bootcamp
       </a> -->
+      <button id="button" class="nav-test-button" >ENROLL</button>
 
 
       <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
@@ -82,48 +83,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Intro -->
 
- <div id="intro" class="parallax-container valign-wrapper">
+ <div id="intro" style="width: 100%" class="parallax-container valign-wrapper">
     <div id="image_intro" class="parallax"><img src="image/landscape_low.jpg" alt=""></div>
     <div class="section-intro no-pad-bot">
       <div class="container">
-        <h1 id="title-test" class="header-title light">LEARN<br>CODING</h1>
+        <h1 id="title-test" class="header-title light">LEARN<br>TO CODE</h1>
 
         <h2 class="header-subtitle" light>TURN YOUR FOODTECH IDEA INTO REALITY</h2>
-        <button id="button" class="test-button" onclick="showFormContainer()">JUMP IN THE FOODTECH INDUSTRY</button>
 
-
-  <div id="formContainer" style="display: none; margin-top: 60px;" class="container">
-          <form id="form" class="row" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
-            <div class="col s12 m6 l6">
-        <input id="nameField" class="btn2" type="text" name="entry.2096528774" placeholder="Enter your name" required>
-      </div>
-      <div class="col s12 m6 l6">
-        <input id="emailField" class="btn2" type="email" name="entry.543364557" placeholder="Enter your email" required>
-      </div>
-      <div class="col s12 m6 offset-m3 l6 offset-l3">
-        <button id="send" class="btn3 col s12 m12" type="submit">APPLY</button>
-      </div>
-
-    </form>
-
-
-    <h5 id="success-msg" style="text-align: center; display: none">Thanks <span id="namehere"></span>!<br>We will get in touch soon.</h5>
-  </div>
-
-
+<!-- countdown -->
+    <div class="countdown-container">
+      <div class="count-down">
+        <h5>THE FIRST COHORT STARTS SOON</h5>
+        <pre>Day  Hrs  Min  Sec</pre>
+        <p class="count-down-p" id="demo"></p>
       </div>
     </div>
 
-      </div>
+    <button style="font-size: 20px" id="button" class="test-button" >ENROLL</button>
+
+<!-- Form button -->
+<!-- <button id="button" class="test-button" onclick="showFormContainer()">JUMP IN THE FOODTECH INDUSTRY</button>
+
+    <div id="formContainer" style="display: none; margin-top: 60px;" class="container">
+        <form id="form" class="row" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+          <div class="col s12 m6 l6">
+            <input id="nameField" class="btn2" type="text" name="entry.2096528774" placeholder="Enter your name" required>
+          </div>
+          <div class="col s12 m6 l6">
+            <input id="emailField" class="btn2" type="email" name="entry.543364557" placeholder="Enter your email" required>
+          </div>
+          <div class="col s12 m6 offset-m3 l6 offset-l3">
+           <button id="send" class="btn3 col s12 m12" type="submit">APPLY</button>
+          </div>
+      </form>
+
+      <h5 id="success-msg" style="text-align: center; display: none">Thanks <span id="namehere"></span>!<br>We will get in touch soon.</h5>
+    </div> -->
+
+
+    </div>
+  </div>
+</div>
 
 
       <!--   PROGRAM  -->
 
  <div id="bootcamp-program" class="container section">
     <div class="section-intro no-pad-bot">
+
+
       <div class="row">
           <!-- <h3 class="center icon-block white-text"><i class="material-icons colored">developer_mode</i></h3> -->
-          <h3 style="margin-top: 100px" class="title-section-about colored">BUILD YOUR FOODTECH STARTUP</h3>
+          <h3 style="margin-top: 70px" class="title-section-about colored">BUILD YOUR FOODTECH STARTUP</h3>
       </div>
       <div class="academy-info colored2">
         <h5>JOIN OUR CODING ACADEMY PARTENR BASED IN BANGALORE, THE TECH CAPITAL OF INDIA, AND START LEARN THE LANGUAGES OF THE FUTURE</h5>
@@ -464,38 +476,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  })
    </script>
 
-<!-- AJAX FORM SCRIPT -->
-<!-- <script>
-  $.fn.serializeObject = function() {
-  var o = {};
-  var a = this.serializeArray();
-  $.each(a, function() {
-    if (o[this.name]) {
-      if (!o[this.name].push) {
-        o[this.name] = [o[this.name]];
-      }
-      o[this.name].push(this.value || '');
-    } else {
-      o[this.name] = this.value || '';
-    }
-  });
-  return o;
-};
-
-var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbwrPdkBOuiWOjk_MEgC3IOZePXvtNljNHI60tYPrtZmHxTk7CMM/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(function(e){console.log(e);}
-  );
-})
-</script> -->
 
 
 <script>
@@ -567,6 +547,37 @@ window.onload = function() {
     showName.innerHTML = userName.value
   }
 }
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 15, 2020 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "\xa0:\xa0" + hours + "\xa0:\xa0"
+  + minutes + "\xa0:\xa0" + seconds ;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>
 
 
